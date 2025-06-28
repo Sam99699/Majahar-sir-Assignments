@@ -1,0 +1,237 @@
+
+//SELECT THE CODES YOU WENT TO RUN THEN  DO CONTROL + BACKSLASH(/)  FOR UNCOMMENT.
+
+//1.contains()
+
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String email = "salmankhan9118@gmail.com";
+//        if(email.contains("@")){
+//            System.out.println("Valid email formate.");
+//        }
+//    }
+//}
+
+//2.substring()
+
+//package assignment01;
+//
+//public class methods{
+//    public static void main(String[] args) {
+//        String receipt ="order #12345 confirmed";
+//        String orderNumber = receipt.substring(1,5);
+//        System.out.println("order Number: " + orderNumber);
+//    }
+//}
+
+//3.join()
+
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String[] ingredients = {"Flour", "Sugar", "Eggs", "Butter"};
+//        String recipe = String.join(", ", ingredients);
+//        System.out.println("Ingredients: " + recipe);
+//    }
+//}
+
+//4.replace()
+
+//package assignment01;
+//
+//public class methods{
+//    public static void main(String[] args) {
+//        String announcement = "Sale starts on 1/1/2023";
+//        String updated = announcement.replace("2023", "2024");
+//        System.out.println(updated);
+//    }
+//}
+
+//5.replaceAll()
+
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String phoneNumber = "Call me at (123) 456-7890";
+//        String digitsOnly = phoneNumber.replaceAll("[^0-9]", "");
+//        System.out.println(digitsOnly);
+//    }
+//}
+
+//6.replaceFirst()
+
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String logEntry = "ERROR: Disk full. ERROR: Memory low";
+//        String fixed = logEntry.replaceFirst("ERROR", "WARNING");
+//        System.out.println(fixed);
+//    }
+//}
+
+//7.charAt()
+
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String password = "s3cr3t";
+//        char firstChar = password.charAt(0);
+//        System.out.println("First character: " + firstChar);
+//    }
+//}
+
+//8.getBytes()
+
+//package assignment01;
+//import java.util.Arrays;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String message = "Hello World";
+//        byte[] bytes = message.getBytes();
+//        System.out.println("Message in bytes: " + Arrays.toString(bytes));
+//    }
+//}
+
+//9.indexOf()
+
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String url = "https://www.example.com/page";
+//        int domainStart = url.indexOf("www.");
+//        int domainEnd = url.indexOf(".com");
+//        String domain = url.substring(domainStart, domainEnd + 4);
+//        System.out.println("Domain: " + domain);
+//    }
+//}
+
+//10.compareTo()
+
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String name1 = "Alice";
+//        String name2 = "Bob";
+//        int result = name1.compareTo(name2);
+//        if (result < 0) {
+//            System.out.println(name1 + " comes before " + name2);
+//        }
+//    }
+//}
+
+//11.compareToIgnoreCase()
+
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String input = "YES";
+//        if (input.compareToIgnoreCase("yes") == 0) {
+//            System.out.println("User confirmed");
+//        }
+//    }
+//}
+
+//12.trim()
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String userInput = "   hello world   ";
+//        String cleaned = userInput.trim();
+//        System.out.println("[" + cleaned + "]");
+//    }
+//}
+
+//13.format()
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String receipt = String.format("Total: $%.2f | Items: %d | Date: %s",
+//                19.99, 3, "2023-05-15");
+//        System.out.println(receipt);
+//    }
+//}
+
+//14.split()
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String csv = "John,Doe,35,New York";
+//        String[] data = csv.split(",");
+//        System.out.println("First Name: " + data[0]);
+//        System.out.println("Last Name: " + data[1]);
+//    }
+//}
+
+//15.toLowerCase()
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String userCommand = "STOP";
+//        if (userCommand.toLowerCase().equals("stop")) {
+//            System.out.println("System shutting down...");
+//        }
+//    }
+//}
+
+//16.toUpperCase()
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String warning = "system alert";
+//        System.out.println(warning.toUpperCase());
+//    }
+//}
+
+//17.valueOf()
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        int age = 25;
+//        double price = 9.99;
+//        boolean active = true;
+//        System.out.println(String.valueOf(age));
+//        System.out.println(String.valueOf(price));
+//        System.out.println(String.valueOf(active));
+//    }
+//}
+
+//18.toCharArray()
+//package assignment01;
+//
+//public class methods {
+//    public static void main(String[] args) {
+//        String password = "secret";
+//        char[] chars = password.toCharArray();
+//        for (char c : chars) {
+//            System.out.print(c + "-");
+//        }
+//    }
+//}
+
+//19.matches()
+package assignment01;
+
+public class methods {
+    public static void main(String[] args) {
+        String email = "test@example.com";
+        if (email.matches("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$")) {
+            System.out.println("Valid email address");
+        }
+    }
+}
